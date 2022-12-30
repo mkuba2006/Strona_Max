@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "My_Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuba2006/Strona_Max.git"
+  },
+  "author": "mkuba2006",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkuba2006/Strona_Max/issues"
+  },
+  "homepage": "https://github.com/mkuba2006/Strona_Max#readme",
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
+}
