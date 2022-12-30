@@ -17,7 +17,6 @@ $('nav a').on('click', function(e){
     $(this).toggleClass( "fa-active" );
     }
   );
-
   
   const nav = document.querySelector('nav');
   const nav_links = document.querySelectorAll('nav a');
