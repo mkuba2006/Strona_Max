@@ -1,5 +1,5 @@
 
-import { ProductList } from './ProductList.js'
+import {ProductList, ProductList2 } from './ProductList.js'
 globalThis.DEFAULT_VALUE = 'MAX'
 
 const time = 500
@@ -31,8 +31,25 @@ class end {
     const productList = new ProductList()
     const prodListEl = productList.render()
     renderHook.append(prodListEl)
+
+    const renderHook2 = document.getElementById('app')
+    const productList2 = new ProductList2()
+    const prodListEl2 = productList2.render()
+    renderHook2.append(prodListEl2)
+
   }
 }
+
+class end2 {
+  render () {
+    const renderHook2 = document.getElementById('app')
+    const productList2 = new ProductList2()
+    const prodListEl2 = productList2.render()
+    renderHook2.append(prodListEl2)
+
+  }
+}
+
 
 class App {
   static cart
@@ -41,6 +58,7 @@ class App {
     const shop = new end()
     shop.render()
     this.cart = shop.cart
+    
   }
 }
 

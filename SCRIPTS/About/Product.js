@@ -10,6 +10,19 @@ export class Product {
   
 }
 
+export class Product_fantasy {
+  constructor (nazwa, link, obraz, text, opis, cyf) {
+    this.nazwa = nazwa
+    this.link = link
+    this.obraz = obraz
+    this.text = text
+    this.opis = opis
+    this.cyf = cyf
+  }
+  
+}
+
+
 const header = document.querySelectorAll('header');
 
 

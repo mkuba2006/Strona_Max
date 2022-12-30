@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-useless-constructor */
-import { ProductItem} from './ProductItem.js'
-import { Product } from './Product.js'
+import { ProductItem, ProductItem2} from './ProductItem.js'
+import { Product , Product_fantasy } from './Product.js'
 
 export class ProductList {
   products = [
@@ -56,8 +56,6 @@ export class ProductList {
     )
   ]
 
-  constructor () {}
-
   render () {
     const prodList = document.createElement('ul')
     prodList.className = 'product-list'
@@ -73,6 +71,62 @@ export class ProductList {
       prodList.append(prodEl)
     }
     
+
+      const childrens = prodList.children  ;
+      
+
+      if(window.innerWidth < 500){
+        childrens[1].style.marginLeft= '7%';
+          for(const e of childrens){  
+            e.style.width= '80vw';
+            e.style.display= 'block';
+            e.style.minHeight= '20vh';
+            e.style.maxHeight= '40vh';
+            e.style.height= 'auto';
+          }
+          opis.style.minHeight = "auto";
+          
+      }
+
+    return prodList
+  }
+}
+
+
+
+
+
+
+export class ProductList2 {
+  product=[
+    new Product_fantasy(
+      'Adventure Time',
+      'https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378',
+      'https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80',
+      'by Rage Against The Machine',
+      'https://en.wikipedia.org/wiki/Rage_Against_the_Machine',
+      '6'
+    )
+  ]
+
+
+
+  render () {
+    const prodList = document.createElement('ul')
+    prodList.className = 'product-list'
+    const opis = document.createElement('div')
+    const opis_opis = document.createTextNode('My favourite movies/series')
+    opis.setAttribute('id', 'opisa')
+    opis.append(opis_opis)
+    prodList.prepend(opis)
+    
+    for (const prod of this.product) {
+      const productItem = new ProductItem2(prod)
+      const prodEl = productItem.render()
+      prodList.append(prodEl)
+    }
+    
+
 
       const childrens = prodList.children  ;
       
