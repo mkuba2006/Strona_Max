@@ -31,18 +31,12 @@ class end {
     const productList = new ProductList()
     const prodListEl = productList.render()
     renderHook.append(prodListEl)
-
-    const renderHook2 = document.getElementById('app')
-    const productList2 = new ProductList2()
-    const prodListEl2 = productList2.render()
-    renderHook2.append(prodListEl2)
-
   }
 }
 
 class end2 {
-  render () {
-    const renderHook2 = document.getElementById('app')
+  render2 () {
+    const renderHook2 = document.getElementById('app2')
     const productList2 = new ProductList2()
     const prodListEl2 = productList2.render()
     renderHook2.append(prodListEl2)
@@ -53,19 +47,24 @@ class end2 {
 
 class App {
   static cart
+  static cart2
   static init () {
-    // eslint-disable-next-line new-cap
     const shop = new end()
     shop.render()
     this.cart = shop.cart
-    
+  }
+  static init2 () {
+    const shop = new end2()
+    shop.render2()
+    this.cart2 = shop.cart2
   }
 }
 
 App.init()
+App.init2()
+
 
 const text = document.querySelectorAll('#text')
-const list = document.querySelector('.product-list');
 
 
 
@@ -83,23 +82,12 @@ text.forEach(text => {
 })
 
 
-const items = document.querySelectorAll('.product-item')
-for (let i = 0; i <= items.length; i++) {
-  items[i].classList.add(`grid${i}`)
-  // if (window.screen.width > 930) {
-  //   if (i % 2 == 0) {
-  //     console.log(i + ' tak')
-  //     items[i].style.float = 'left'
-  //     items[i].style.marginRight = '15px'
-  //   } else {
-  //     console.log(i + ' nie')
-  //     items[i+2].style.marginTop = '20px'
-  //   }
-  // } 
-  // else {
-  //   items[i].style.clear = 'both';
-  //   items[i].style.width = '220%';
-  //   items[i].classList.add('testa')
-  // }
-}
 
+
+const items = document.querySelectorAll('.product-item');
+const np = document.querySelectorAll('.product-item2');
+console.log(np);
+for (let i = 0; i <= items.length; i++) {
+  items[i].classList.add(`grid${i}`);
+  np[i].classList.add(`grid${i}`);
+}

@@ -11,12 +11,13 @@ export class Product {
 }
 
 export class Product_fantasy {
-  constructor (nazwa, link, obraz, text, opis, cyf) {
+  constructor (nazwa, link, obraz, opis1, opis2, opis3, cyf) {
     this.nazwa = nazwa
     this.link = link
     this.obraz = obraz
-    this.text = text
-    this.opis = opis
+    this.opis1 = opis1
+    this.opis2 = opis2
+    this.opis3 = opis3
     this.cyf = cyf
   }
   

@@ -58,14 +58,16 @@ export class ProductItem2 {
 
   render () {
     const prodEl = document.createElement('li')
-    prodEl.className = 'product-item'
+    prodEl.className = 'product-item2'
     prodEl.innerHTML = `
-          <div class="ab , ab${this.product.cyf}">
-            <img src="${this.product.obraz}"class="imag">
+          <div class="ab2 , ab${this.product.cyf}2">
+            <img src="${this.product.obraz}"class="imag2">
           </div>
-            <div class="product-item__content">
+            <div class="product-item__content2">
               <h2><a href="${this.product.link}"><button>${this.product.nazwa}</button></a></h2>
-              <h3><a href="${this.product.opis}">${this.product.text}</a></h3>
+              <h3>${this.product.opis1}</h3>
+              <h3>${this.product.opis2}</h3>
+              <h3>${this.product.opis3}</h3>
             </div>
         `
        

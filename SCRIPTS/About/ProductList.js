@@ -103,8 +103,36 @@ export class ProductList2 {
       'Adventure Time',
       'https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378',
       'https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80',
-      'by Rage Against The Machine',
-      'https://en.wikipedia.org/wiki/Rage_Against_the_Machine',
+      'opis',
+      'opis',
+      'opis',
+      '6'
+    ),
+    new Product_fantasy(
+      'Adventure Time',
+      'https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378',
+      'https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80',
+      'opis',
+      'opis',
+      'opis',
+      '6'
+    ),
+    new Product_fantasy(
+      'Adventure Time',
+      'https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378',
+      'https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80',
+      'opis',
+      'opis',
+      'opis',
+      '6'
+    ),
+    new Product_fantasy(
+      'Adventure Time',
+      'https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378',
+      'https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80',
+      'opis',
+      'opis',
+      'opis',
       '6'
     )
   ]
@@ -112,23 +140,24 @@ export class ProductList2 {
 
 
   render () {
-    const prodList = document.createElement('ul')
-    prodList.className = 'product-list'
+    const prodList2 = document.createElement('ul')
+    prodList2.className = 'product-list2';
+    
     const opis = document.createElement('div')
     const opis_opis = document.createTextNode('My favourite movies/series')
-    opis.setAttribute('id', 'opisa')
+    opis.setAttribute('id', 'opisa2')
     opis.append(opis_opis)
-    prodList.prepend(opis)
+    prodList2.prepend(opis)
     
     for (const prod of this.product) {
       const productItem = new ProductItem2(prod)
       const prodEl = productItem.render()
-      prodList.append(prodEl)
+      prodList2.append(prodEl)
     }
     
 
 
-      const childrens = prodList.children  ;
+      const childrens = prodList2.children  ;
       
 
       if(window.innerWidth < 500){
@@ -144,6 +173,6 @@ export class ProductList2 {
           
       }
 
-    return prodList
+    return prodList2
   }
 }
