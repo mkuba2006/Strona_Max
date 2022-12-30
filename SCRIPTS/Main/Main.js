@@ -6,7 +6,6 @@ $('nav a').on('click', function(e){
   setTimeout(`location.href = '${url}';`,500);
   })
 
-
 $('#fa:last-child').hover(function () {
   $(this).toggleClass( "fa-active" );
   }

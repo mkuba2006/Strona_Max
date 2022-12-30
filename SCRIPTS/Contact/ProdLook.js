@@ -14,6 +14,7 @@ export class ProdLook{
             ${this.prod.text}
         </a>
     `;
+    
 
     button.style.cssText =`
       border-radius: 5px;

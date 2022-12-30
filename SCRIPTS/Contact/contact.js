@@ -30,7 +30,6 @@ $('nav a').on('click', function(e){
 
   nav_links.forEach((link , index) => {
     link.style.animation = `navLink 0.5s ease forwards ${index / 7}s`;
-
   })
   })
   

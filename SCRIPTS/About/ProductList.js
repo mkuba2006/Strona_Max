@@ -72,6 +72,7 @@ export class ProductList {
       const prodEl = productItem.render()
       prodList.append(prodEl)
     }
+    
 
       const childrens = prodList.children  ;
       

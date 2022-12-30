@@ -13,7 +13,6 @@ $('nav a').on('click', function(e){
     $(this).toggleClass( "fa-active" );
     }
   );
-  
   $('#fa:last-child').hover(function () {
     $(this).toggleClass( "fa-active" );
     }

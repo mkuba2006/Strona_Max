@@ -23,6 +23,7 @@ header.forEach(text => {
 
 
 
+
 // if(window.innerWidth > 700){
 
 //   new fullpage('#fullPage', {

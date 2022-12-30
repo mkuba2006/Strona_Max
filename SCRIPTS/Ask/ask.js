@@ -18,6 +18,7 @@ $('#fa:last-child').hover(function () {
 }
 )
 
+
 const nav = document.querySelector('nav')
 const nav_links = document.querySelectorAll('nav a')
 const burger = document.querySelector('#burger')

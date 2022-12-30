@@ -6,3 +6,4 @@ export class Prod{
       this.text = text
     }
   }
+  

@@ -32,6 +32,7 @@ export class ProductItem {
             e.style.padding = '5px 0 5px 0';
             
 
+            
           }
 
           for(const e of content){      

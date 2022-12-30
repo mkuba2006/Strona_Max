@@ -46,6 +46,7 @@ export class ProdList{
         ),
     ];
     
+    
     render(){
         const List_prod = document.createElement('div');
         List_prod.className = 'List_prod_table';

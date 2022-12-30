@@ -64,6 +64,7 @@ text.forEach(text => {
   })
 })
 
+
 const items = document.querySelectorAll('.product-item')
 for (let i = 0; i <= items.length; i++) {
   items[i].classList.add(`grid${i}`)

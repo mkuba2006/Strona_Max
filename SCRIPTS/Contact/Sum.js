@@ -67,6 +67,7 @@ text.forEach(text => {
   text.addEventListener('mouseover', ()=>{
     text.classList.add('color_new');
   })
+  
 }); 
 
 text.forEach(text => {
