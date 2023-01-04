@@ -58,6 +58,7 @@ export class ProductList {
   render() {
     const prodList = document.createElement("ul");
     prodList.className = "product-list";
+    prodList.id = "prod-list";
     const opis = document.createElement("div");
     const opis_opis = document.createTextNode("My favourite songs");
     opis.setAttribute("id", "opisa");
@@ -131,7 +132,6 @@ export class ProductList2 {
   render() {
     const prodList2 = document.createElement("ul");
     prodList2.className = "product-list2";
-
     const opis = document.createElement("div");
     const opis_opis = document.createTextNode("My favourite movies/series");
     opis.setAttribute("id", "opisa2");
