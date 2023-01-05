@@ -111,8 +111,8 @@ export class ProductList2 {
     ),
     new Product_fantasy(
       "Regular Show",
-      "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
-      "https://64.media.tumblr.com/avatar_09763c196180_128.pnj",
+      "https://www.filmweb.pl/serial/Zwyczajny+serial-2009-595304",
+      "https://fwcdn.pl/fpo/19/93/701993/7644113.6.jpg",
       "opis",
       "opis",
       "opis",
@@ -122,6 +122,15 @@ export class ProductList2 {
       "Adventure Time",
       "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
       "https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80",
+      "opis",
+      "opis",
+      "opis",
+      "6"
+    ),
+    new Product_fantasy(
+      "The Wither",
+      "https://www.filmweb.pl/serial/Wied%C5%BAmin-2019-724464",
+      "https://fwcdn.pl/fpo/44/64/724464/7981674.3.jpg",
       "opis",
       "opis",
       "opis",

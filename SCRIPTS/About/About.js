@@ -69,16 +69,13 @@ text.forEach((text) => {
 });
 
 var nodes = document.getElementById("prod-list").getElementsByTagName("li");
-const animProd = document.querySelectorAll("li");
+const animProd = document.querySelectorAll(".product-item");
 
 animProd.forEach((prod) => {
   prod.addEventListener("mouseover", () => {
-    console.log(nodes);
-    // for (var i = 0; i <= nodes.length; i++) {
-    //   nodes[i].style.margin = "0px";
-    // }
     prod.style.cssText = `
-		transition: 0.01s;
+		transition: 0.15s;
+    padding: 4% 7% 4% 7%;
 		margin: 0px;
 		width: 100%;
 		height: 100%;

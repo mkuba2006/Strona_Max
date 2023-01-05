@@ -12,3 +12,18 @@ body {
     background-color: #180814ea;
   }
 }
+@media screen and (min-width: 1000px) {
+  #text {
+    background: linear-gradient(black 50%, #fff 0) 0 var(--_d, 0) / 100% 200%
+        no-repeat,
+      linear-gradient(#0000 50%, #deb992 0) 0 var(--_d, 0) / 100% 200% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.8s;
+  }
+  #text:hover {
+    --_d: 100%;
+    color: #141824;
+    font-weight: 800;
+  }
+}
