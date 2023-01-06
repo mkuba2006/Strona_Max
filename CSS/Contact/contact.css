@@ -7,7 +7,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+#app {
+  margin-top: 12vh;
+}
 body {
   align-items: center;
   justify-content: center;
@@ -156,10 +158,6 @@ html {
   h1 {
     font-size: 30px;
   }
-
-  #header_logo {
-    width: 50vw;
-  }
   header {
     height: 8vh;
   }
@@ -172,19 +170,8 @@ html {
   }
 }
 @media screen and (max-width: 1150px) {
-  #header_logo {
-    width: 40vw;
-    margin-right: 5vw;
-  }
-
   #text {
     font-size: 19px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #header_logo {
-    width: 36vw;
   }
 }
 

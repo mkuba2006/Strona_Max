@@ -111,9 +111,6 @@ html {
 }
 
 @media screen and (max-width: 1350px) {
-  #header_logo {
-    width: 50vw;
-  }
   header {
     height: 8vh;
   }
@@ -126,19 +123,8 @@ html {
   }
 }
 @media screen and (max-width: 1150px) {
-  #header_logo {
-    width: 40vw;
-    margin-right: 5vw;
-  }
-
   #text {
     font-size: 19px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #header_logo {
-    width: 36vw;
   }
 }
 
