@@ -23,19 +23,31 @@ burger.addEventListener("click", () => {
 
 class end {
   render() {
+    const opis = document.createElement("div");
+    const opis_opis = document.createTextNode("My favourite songs");
+    opis.setAttribute("id", "opisa");
+    opis.append(opis_opis);
     const renderHook = document.getElementById("app");
     const productList = new ProductList();
     const prodListEl = productList.render();
+    renderHook.prepend(opis);
     renderHook.append(prodListEl);
+    opis.style.marginTop = "10vh";
   }
 }
 
 class end2 {
   render2() {
+    const opis = document.createElement("div");
+    const opis_opis = document.createTextNode("My favourite movies/series");
+    opis.setAttribute("id", "opisa");
+    opis.append(opis_opis);
     const renderHook2 = document.getElementById("app2");
     const productList2 = new ProductList2();
     const prodListEl2 = productList2.render();
     renderHook2.append(prodListEl2);
+    renderHook2.prepend(opis);
+    opis.style.marginTop = "10vh";
   }
 }
 
@@ -74,7 +86,7 @@ const animProd = document.querySelectorAll(".product-item");
 animProd.forEach((prod) => {
   prod.addEventListener("mouseover", () => {
     prod.style.cssText = `
-		transition: 0.15s;
+		transition: 0.12s;
     padding: 4% 7% 4% 7%;
 		margin: 0px;
 		width: 100%;
@@ -84,7 +96,7 @@ animProd.forEach((prod) => {
 		`;
   });
   prod.addEventListener("mouseout", () => {
-    prod.style.cssText = ``;
+    prod.style.cssText = `transition: 0.12s;`;
   });
 });
 

@@ -16,7 +16,7 @@ export class ProductList {
     new Product(
       "Karma Police",
       "https://www.youtube.com/watch?v=1uYWYWPc9HU",
-      "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+      "https://c-fa.cdn.smule.com/rs-s53/arr/e8/c2/4faa3dd5-adeb-4ce1-83f0-972397d386de.jpg",
       "by Radiohead",
       "https://pl.wikipedia.org/wiki/Radiohead",
       "2"
@@ -59,22 +59,16 @@ export class ProductList {
     const prodList = document.createElement("ul");
     prodList.className = "product-list";
     prodList.id = "prod-list";
-    const opis = document.createElement("div");
-    const opis_opis = document.createTextNode("My favourite songs");
-    opis.setAttribute("id", "opisa");
-    opis.append(opis_opis);
-    prodList.prepend(opis);
 
     for (const prod of this.products) {
       const productItem = new ProductItem(prod);
       const prodEl = productItem.render();
       prodList.append(prodEl);
     }
-
     const childrens = prodList.children;
 
     if (window.innerWidth < 500) {
-      childrens[1].style.marginLeft = "7%";
+      childrens[0].style.marginLeft = "21%";
       for (const e of childrens) {
         e.style.width = "80vw";
         e.style.display = "block";
@@ -82,7 +76,6 @@ export class ProductList {
         e.style.maxHeight = "40vh";
         e.style.height = "auto";
       }
-      opis.style.minHeight = "auto";
     }
 
     return prodList;
@@ -94,7 +87,7 @@ export class ProductList2 {
     new Product_fantasy(
       "Adventure Time",
       "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
-      "https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80",
+      "https://m.media-amazon.com/images/M/MV5BMGFkNGY4NGMtZjY0NC00YTI0LThiZjMtMjBmZGMzOGU3YTdmXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg",
       "Cartoon",
       "Adventure",
       "Animation",
@@ -103,7 +96,7 @@ export class ProductList2 {
     new Product_fantasy(
       "Game Of Thrones",
       "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
-      "https://downloadwap.com/thumbs4/ringtones/covers/s/got.jpg",
+      "https://fwcdn.pl/cwpo/00/18/18/13.3.jpg",
       "opis",
       "opis",
       "opis",
@@ -112,16 +105,16 @@ export class ProductList2 {
     new Product_fantasy(
       "Regular Show",
       "https://www.filmweb.pl/serial/Zwyczajny+serial-2009-595304",
-      "https://fwcdn.pl/fpo/19/93/701993/7644113.6.jpg",
+      "https://fwcdn.pl/fpo/53/04/595304/7424170.3.jpg",
       "opis",
       "opis",
       "opis",
       "6"
     ),
     new Product_fantasy(
-      "Adventure Time",
-      "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
-      "https://i.scdn.co/image/ab6761610000e5ebc94fb92f8143c3637c6f7b80",
+      "The Watcher",
+      "https://www.filmweb.pl/serial/Obserwator-2022-875816",
+      "https://m.media-amazon.com/images/M/MV5BMTY3OGQxNTItYWEwZS00ZTg0LWE1MjYtMTcxNTUzYzk0ZjdmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
       "opis",
       "opis",
       "opis",
@@ -141,11 +134,6 @@ export class ProductList2 {
   render() {
     const prodList2 = document.createElement("ul");
     prodList2.className = "product-list2";
-    const opis = document.createElement("div");
-    const opis_opis = document.createTextNode("My favourite movies/series");
-    opis.setAttribute("id", "opisa2");
-    opis.append(opis_opis);
-    prodList2.prepend(opis);
 
     for (const prod of this.product) {
       const productItem = new ProductItem2(prod);
@@ -156,7 +144,7 @@ export class ProductList2 {
     const childrens = prodList2.children;
 
     if (window.innerWidth < 500) {
-      childrens[1].style.marginLeft = "7%";
+      childrens[0].style.marginLeft = "9%";
       for (const e of childrens) {
         e.style.width = "80vw";
         e.style.display = "block";
@@ -164,7 +152,6 @@ export class ProductList2 {
         e.style.maxHeight = "40vh";
         e.style.height = "auto";
       }
-      opis.style.minHeight = "auto";
     }
 
     return prodList2;
