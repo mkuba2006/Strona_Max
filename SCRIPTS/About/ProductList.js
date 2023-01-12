@@ -68,7 +68,7 @@ export class ProductList {
     const childrens = prodList.children;
 
     if (window.innerWidth < 500) {
-      childrens[0].style.marginLeft = "21%";
+      childrens[0].style.marginLeft = "8%";
       for (const e of childrens) {
         e.style.width = "80vw";
         e.style.display = "block";
@@ -121,7 +121,7 @@ export class ProductList2 {
       "6"
     ),
     new Product_fantasy(
-      "The Wither",
+      "The Witcher",
       "https://www.filmweb.pl/serial/Wied%C5%BAmin-2019-724464",
       "https://fwcdn.pl/fpo/44/64/724464/7981674.3.jpg",
       "opis",

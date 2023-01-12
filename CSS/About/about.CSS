@@ -68,7 +68,7 @@ html {
   min-height: 130px;
   max-height: 130px;
   border-radius: 15px;
-  background-color: #190a35;
+  background-color: #022c43;
   display: flex;
   padding: 13px 26px 13px 26px;
   margin: 10px;
@@ -79,7 +79,7 @@ html {
 
 .ab {
   width: 40%;
-  background-color: none;
+  background-color: #022c43;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
@@ -328,28 +328,6 @@ h2 {
   }
 }
 
-/* @media screen and (max-width: 1800px) {
-  .product-list {
-    padding: 0 5% 0 5%;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
-  }
-  .product-item {
-    min-width: 500px;
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0;
-  }
-  .product-item img {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  .ab2 {
-    max-height: 16vh;
-  }
-} */
-
 @media screen and (max-width: 1579px) {
   #header_logo {
     margin-right: 7vw;
@@ -385,17 +363,14 @@ h2 {
   }
 }
 @media screen and (max-width: 1000px) {
-  /* .product-list {
-    padding: 0 100px 0 100px;
-  }
-  .product-item {
-    width: 40vw;
-  } */
   .product-item__content {
     font-size: 15px;
   }
+  .product-list {
+    width: 100%;
+  }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 920px) {
   #burger div {
     display: block;
   }
@@ -429,8 +404,45 @@ h2 {
     object-fit: cover;
     border-radius: 15px;
   }
+  .product-list {
+    min-width: 330px;
+    grid-template-columns: 1fr;
+  }
+  .product-item {
+    min-width: 530px;
+    grid-template-columns: 1fr;
+  }
+  .product-item img {
+    margin-top: 5px;
+  }
+  .ab {
+    max-height: 25vh;
+  }
+  .ab1 {
+    background-color: rgba(0, 0, 0, 0.897);
+  }
+  .ab2 {
+    background-color: rgb(255, 255, 255);
+  }
+  .ab3 {
+    background-color: rgb(6, 139, 6);
+  }
+  .ab4 {
+    background-color: rgb(175, 172, 172);
+  }
+  .ab5 {
+    background-color: rgb(19, 18, 18);
+  }
+  .ab6 {
+    background-color: gray;
+  }
 }
-
+@media screen and (max-width: 600px) {
+  .product-item {
+    min-width: 330px;
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 500px) {
   .product-list {
     padding: 0 0 0 0;
@@ -465,26 +477,5 @@ h2 {
     -webkit-box-orient: vertical;
     overflow: hidden;
     width: 100%;
-  }
-  .ab {
-    max-height: 25vh;
-  }
-  .ab1 {
-    background-color: rgba(0, 0, 0, 0.897);
-  }
-  .ab2 {
-    background-color: rgba(255, 255, 255, 0.945);
-  }
-  .ab3 {
-    background-color: rgb(6, 139, 6);
-  }
-  .ab4 {
-    background-color: rgb(175, 172, 172);
-  }
-  .ab5 {
-    background-color: rgb(19, 18, 18);
-  }
-  .ab6 {
-    background-color: gray;
   }
 }
