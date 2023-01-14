@@ -68,7 +68,6 @@ export class ProductList {
     const childrens = prodList.children;
 
     if (window.innerWidth < 500) {
-      childrens[0].style.marginLeft = "8%";
       for (const e of childrens) {
         e.style.width = "80vw";
         e.style.display = "block";
@@ -139,19 +138,6 @@ export class ProductList2 {
       const productItem = new ProductItem2(prod);
       const prodEl = productItem.render();
       prodList2.append(prodEl);
-    }
-
-    const childrens = prodList2.children;
-
-    if (window.innerWidth < 500) {
-      childrens[0].style.marginLeft = "9%";
-      for (const e of childrens) {
-        e.style.width = "80vw";
-        e.style.display = "block";
-        e.style.minHeight = "20vh";
-        e.style.maxHeight = "40vh";
-        e.style.height = "auto";
-      }
     }
 
     return prodList2;

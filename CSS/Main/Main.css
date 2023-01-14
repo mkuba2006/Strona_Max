@@ -27,17 +27,6 @@ html {
   overflow: hidden;
 }
 
-#burger div {
-  cursor: pointer;
-  width: 30px;
-  height: 4px;
-  margin: 5px;
-  background-color: #fdfdfd;
-  display: none;
-  padding-left: 3%;
-  transition: all 0.3s ease;
-}
-
 #photo {
   padding: 2px;
 }
@@ -91,22 +80,6 @@ html {
 
 .animation {
   display: flex;
-}
-
-.toggle .line_one {
-  transform: rotate(-45deg) translate(-9px, 4px);
-}
-
-.toggle .line_dwo {
-  opacity: 0;
-}
-
-.toggle .line_three {
-  transform: rotate(45deg) translate(-9px, -4px);
-}
-
-.nav_active {
-  transform: translateX(0%);
 }
 
 @-webkit-keyframes navLink {
