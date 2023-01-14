@@ -97,18 +97,18 @@ export class ProductList2 {
       "Game Of Thrones",
       "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
       "https://fwcdn.pl/cwpo/00/18/18/13.3.jpg",
-      "opis",
-      "opis",
-      "opis",
+      "Fantasy",
+      "Drama",
+      "Action",
       "6"
     ),
     new Product_fantasy(
       "Regular Show",
       "https://www.filmweb.pl/serial/Zwyczajny+serial-2009-595304",
       "https://fwcdn.pl/fpo/53/04/595304/7424170.3.jpg",
-      "opis",
-      "opis",
-      "opis",
+      "Comedy",
+      "Fantasy",
+      "Sitcom",
       "6"
     ),
     new Product_fantasy(

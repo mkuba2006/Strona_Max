@@ -114,7 +114,7 @@ nav a {
   color: #e9c893;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 830px) {
   body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='500' height='900' preserveAspectRatio='none' viewBox='0 0 500 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1624%26quot%3b)' fill='none'%3e%3crect width='500' height='900' x='0' y='0' fill='rgba(16%2c 15%2c 15%2c 1)'%3e%3c/rect%3e%3cpath d='M444 806L443 1186' stroke-width='8' stroke='url(%23SvgjsLinearGradient1625)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M32 105L31 547' stroke-width='6' stroke='url(%23SvgjsLinearGradient1625)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M194 424L193 -222' stroke-width='10' stroke='url(%23SvgjsLinearGradient1625)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M56 713L55 414' stroke-width='10' stroke='url(%23SvgjsLinearGradient1626)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M303 830L302 1317' stroke-width='10' stroke='url(%23SvgjsLinearGradient1625)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M170 846L169 615' stroke-width='10' stroke='url(%23SvgjsLinearGradient1627)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M281 171L280 -233' stroke-width='10' stroke='url(%23SvgjsLinearGradient1625)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M123 888L122 1520' stroke-width='8' stroke='url(%23SvgjsLinearGradient1626)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M430 447L429 104' stroke-width='10' stroke='url(%23SvgjsLinearGradient1628)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M326 536L325 36' stroke-width='8' stroke='url(%23SvgjsLinearGradient1628)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M212 697L211 1036' stroke-width='8' stroke='url(%23SvgjsLinearGradient1628)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M313 583L312 1075' stroke-width='8' stroke='url(%23SvgjsLinearGradient1627)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M273 608L272 380' stroke-width='10' stroke='url(%23SvgjsLinearGradient1625)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1624'%3e%3crect width='500' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1625'%3e%3cstop stop-color='rgba(161%2c 0%2c 53%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(161%2c 0%2c 53%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1626'%3e%3cstop stop-color='rgba(161%2c 0%2c 53%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(161%2c 0%2c 53%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1627'%3e%3cstop stop-color='rgba(63%2c 167%2c 150%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(63%2c 167%2c 150%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1628'%3e%3cstop stop-color='rgba(63%2c 167%2c 150%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(63%2c 167%2c 150%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
   }
@@ -125,6 +125,33 @@ nav a {
   #header_logo {
     padding-top: 0vh;
     font-size: 30px;
+  }
+  #burger div {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #151b29f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  #text {
+    width: 100%;
+    height: 24vh;
+    font-size: 25px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -143,11 +170,19 @@ nav a {
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 840px) {
   header {
     display: flex;
   }
   nav {
     padding-top: 0;
+  }
+  #text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #text {
+    font-size: 15px;
   }
 }
