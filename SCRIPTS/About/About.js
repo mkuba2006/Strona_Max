@@ -96,14 +96,34 @@ animProd.forEach((prod) => {
 		`;
   });
   prod.addEventListener("mouseout", () => {
-    prod.style.cssText = `transition: 0.12s;`;
+    prod.style.cssText = `transition: 0.02s;`;
   });
 });
 
-const items = document.querySelectorAll(".product-item");
-const np = document.querySelectorAll(".product-item2");
+const list2 = document.querySelector(".product-list2");
+const list2_elements = list2.querySelectorAll(".product-item2");
+if (window.innerWidth > 1370)
+  list2_elements.forEach((ele) => {
+    ele.addEventListener("mouseover", () => {
+      ele.style.cssText = `
+    transition: 0.12s;
+    padding: 4% 7% 4% 7%;
+		margin: 0px;
+		width: 100%;
+		height: 100%;
+		max-height: 215px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      `;
+    });
+    ele.addEventListener("mouseout", () => {
+      ele.style.cssText = `transition: 0.02s;`;
+    });
+  });
 
-for (let i = 0; i <= items.length; i++) {
-  items[i].classList.add(`grid${i}`);
-  np[i].classList.add(`grid${i}`);
-}
+// const items = document.querySelectorAll(".product-item");
+// const np = document.querySelectorAll(".product-item2");
+
+// for (let i = 0; i <= items.length; i++) {
+//   items[i].classList.add(`grid${i}`);
+//   np[i].classList.add(`grid${i}`);
+// }

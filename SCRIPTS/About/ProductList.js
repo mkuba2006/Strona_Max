@@ -94,7 +94,7 @@ export class ProductList2 {
     ),
     new Product_fantasy(
       "Game Of Thrones",
-      "https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378",
+      "https://www.filmweb.pl/serial/Gra+o+tron-2011-476848",
       "https://fwcdn.pl/cwpo/00/18/18/13.3.jpg",
       "Fantasy",
       "Drama",
