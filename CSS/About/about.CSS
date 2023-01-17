@@ -415,5 +415,27 @@ button:hover {
   .product-item2 {
     width: 90%;
     min-width: 275px;
+    padding: 15px 16px 13px 16px;
+  }
+  .product-item__content2 {
+    height: 110%;
+  }
+  h2 {
+    display: flex;
+    min-height: 25%;
+    align-items: center;
+    justify-content: center;
+  }
+  #for_h3 h3 {
+    height: 25px;
+    flex-wrap: wrap;
+    flex: 1 0 80px;
+  }
+  #for_h3 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .product-item__content2 h2 a {
+    padding-left: 0;
   }
 }

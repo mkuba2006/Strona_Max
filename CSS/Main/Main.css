@@ -56,25 +56,21 @@ html {
   height: 75vh;
   width: 50vw;
 }
-
 #content h1 {
   cursor: pointer;
   font-size: 40px;
 }
-
 #content h2 {
   justify-content: center;
   align-items: center;
   padding: 10%;
 }
-
 #content span {
   color: #7400d2;
   -webkit-text-decoration: underline solid 2px;
   text-decoration: underline solid 2px;
 }
-
-#text {
+#content #text {
   font-size: 19px;
 }
 
@@ -328,4 +324,4 @@ footer {
   footer {
     padding-top: 3%;
   }
-} /*# sourceMappingURL=Main.css.map */ /*# sourceMappingURL=Main.css.map */
+} /*# sourceMappingURL=Main.css.map */
