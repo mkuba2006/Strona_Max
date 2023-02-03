@@ -1,3 +1,8 @@
+///BOOTSTRAP////
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
+  new bootstrap.Popover(popover);
+});
+/////////////
 $("nav a").on("click", function (e) {
   e.preventDefault();
   var url = this.href;
@@ -12,17 +17,33 @@ $("#fa:last-child").hover(function () {
   true;
 
 const dzis = new Date();
-var rok = dzis.getFullYear();
-var est = new Date("Sep 10, 2021 15:00:00");
-var roznica = dzis.getTime() - est.getTime();
+let rok = dzis.getFullYear();
+let est = new Date("Sep 10, 2021 15:00:00");
+let roznica = dzis.getTime() - est.getTime();
 roznica = Math.ceil(roznica / 31556900000);
-
 var msg = document.getElementById("clock");
 if (Math.floor(roznica) > 1) {
   msg.textContent = textContent = Math.floor(roznica) + " year/s";
 } else {
   msg.textContent = textContent = Math.floor(roznica) + " year";
 }
+
+// function func() {
+//   const dzis = new Date();
+//   let rok = dzis.getFullYear();
+//   let est = new Date("Sep 10, 2021 15:00:00");
+//   let roznica = dzis.getTime() - est.getTime();
+//   var clc = document.getElementById("clock");
+//   var crok = dzis.getFullYear() - est.getFullYear();
+//   var cdni = dzis.getDay() - est.getDay();
+//   var cgodz = dzis.getHours() - est.getHours();
+//   var cmin = dzis.getMinutes() - est.getMinutes();
+//   var csek = dzis.getSeconds() - est.getSeconds();
+//   var cmilsek = dzis.getMilliseconds() - est.getMilliseconds();
+//   clc.textContent = `${crok}.${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
+
+//   setTimeout(func, 1);
+// }
 
 const nav = document.querySelector("nav");
 const nav_links = document.querySelectorAll("nav a");
