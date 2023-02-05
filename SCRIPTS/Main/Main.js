@@ -30,19 +30,18 @@ if (Math.floor(roznica) > 1) {
 
 // function func() {
 //   const dzis = new Date();
-//   let rok = dzis.getFullYear();
-//   let est = new Date("Sep 10, 2021 15:00:00");
-//   let roznica = dzis.getTime() - est.getTime();
-//   var clc = document.getElementById("clock");
+//   let est = new Date("9 10, 2021 15:00:00");
+//   var clc = new bootstrap.Popover($("button"));
 //   var crok = dzis.getFullYear() - est.getFullYear();
 //   var cdni = dzis.getDay() - est.getDay();
 //   var cgodz = dzis.getHours() - est.getHours();
 //   var cmin = dzis.getMinutes() - est.getMinutes();
 //   var csek = dzis.getSeconds() - est.getSeconds();
 //   var cmilsek = dzis.getMilliseconds() - est.getMilliseconds();
-//   clc.textContent = `${crok}.${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
+//   clc._config.content = `${crok}.${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
+//   clc.setContent();
 
-//   setTimeout(func, 1);
+//   setTimeout(func, 10);
 // }
 
 const nav = document.querySelector("nav");
