@@ -76,7 +76,6 @@ export class ProductList {
         e.style.height = "auto";
       }
     }
-
     return prodList;
   }
 }
