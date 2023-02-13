@@ -102,7 +102,7 @@ export class ProductList2 {
       "6"
     ),
     new Product_fantasy(
-      "Regular Sho",
+      "Regular Show",
       "https://www.filmweb.pl/serial/Zwyczajny+serial-2009-595304",
       "https://fwcdn.pl/fpo/53/04/595304/7424170.3.jpg",
       "Comedy",
