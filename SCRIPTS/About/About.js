@@ -99,7 +99,6 @@ animProd.forEach((prod) => {
     prod.style.cssText = `transition: 0.02s;`;
   });
 });
-
 const list2 = document.querySelector(".product-list2");
 const list2_elements = list2.querySelectorAll(".product-item2");
 if (window.innerWidth > 1370)
